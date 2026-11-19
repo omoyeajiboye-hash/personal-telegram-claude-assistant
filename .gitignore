@@ -1,0 +1,37 @@
+# Secrets and local environment
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# Source specification containing credentials
+Telegram Bot.docx
+
+# Virtual environments
+.venv/
+venv/
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+
+# Local runtime state, databases, logs, backups
+data/
+logs/
+backups/
+*.db
+*.db-wal
+*.db-shm
+STOP_REQUESTED
+
+# IDE / OS files
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store

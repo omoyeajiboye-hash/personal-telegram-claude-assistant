@@ -1,0 +1,5 @@
+Welcome to your Personal Telegram Assistant approved folder.
+
+Notes:
+- Only text files inside this designated folder can be read or created by the assistant.
+- Try asking: "Read notes.txt and summarize it" or "Create a note called meeting-summary".

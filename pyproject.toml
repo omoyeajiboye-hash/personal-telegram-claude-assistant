@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "personal-telegram-assistant"
+version = "0.1.0"
+description = "Private personal Telegram assistant powered by Claude with local validated tools."
+requires-python = ">=3.11"
+dependencies = [
+    "python-telegram-bot==22.8",
+    "anthropic==2.11.0",
+    "python-dotenv==1.2.4",
+    "keyring==25.7.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest==9.2.0",
+    "pytest-asyncio==1.5.0",
+]
+
+[project.scripts]
+telegram-assistant = "telegram_assistant.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+testpaths = ["tests"]
